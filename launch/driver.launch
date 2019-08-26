@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<launch>
+  <node pkg="packman_driver" type="driver.py" name="packman_driver" output="screen"> 
+    <param name="odom_frame" value="odom"/>
+    <param name="base_frame" value="base_footprint"/>
+    
+    <param name="ip" value="192.168.1.1"/> 
+    <param name="port" value="5555"/>
+
+    <param name="rate" value="50"/>
+  </node>
+</launch>
