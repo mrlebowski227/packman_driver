@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+  <node pkg="packman_driver" type="driver_opcua.py" name="packman_driver" output="screen">
+    <param name="odom_frame" value="odom"/>
+    <param name="base_frame" value="base_footprint"/>
+    <param name="ip" value="localhost"/> 
+    <param name="port" value="7755"/>
+    <param name="namespace" value="/"/>
+    <param name="rate" value="50"/>
+  </node>
+</launch>
